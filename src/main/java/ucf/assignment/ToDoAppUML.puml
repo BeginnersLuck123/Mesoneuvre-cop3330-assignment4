@@ -1,0 +1,79 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class HelloApplication {
+    main : public static void
+    start : public void
+}
+
+class main {
+    launch()
+}
+
+class start {
+    root : Parent
+    FXMLLoader.load(Objects.requireNonNull(getClass().getResource("welcomeScreen.fxml")))
+    scene : Scene
+    Scene(root)
+    stage.setScene(scene)
+    stage.setTitle("To-Do App")
+    stage.show()
+}
+
+class HelloController {
+    Item : public static class
+}
+
+class Item {
+    Title :  String
+    Date :  String
+    Description :  String
+    Completed : String
+
+    getTitle : public String
+    setTitle : public void
+
+    getDate : public String
+    setDate : public void
+
+    getDescription : public String
+    setDescription : public void
+
+    getCompleted : public String
+    setCompleted: public void
+}
+
+class setTitle {
+    this.Title
+}
+
+class setDate {
+    this.Date
+}
+
+class setDescription {
+    this.Description
+}
+
+class setCompleted {
+    this.Completed
+}
+
+class HelloController {
+    List : HashMap<String, HashMap<String, HashMap<String, ArrayList <Item> itemsParts>>
+    itemsInList: HashMap<String,ArrayList <Item> itemsParts >>
+    itemParts : ArrayList<Item> itemParts = new ArrayList();
+    addToDoList : public static HashMap<String, HashMap<String, List>>
+    deleteToDoList : public static HashMap<String, HashMap<String, List>>
+    editListTitle : public static HashMap<String, HashMap<String, List>
+    addItem : public static HashMap<String, List>
+    deleteItem : public static HashMap<String, List>
+    editItemTitle : public static HashMap<String, List>
+    editItemDate :  public static HashMap<String, List>
+    editItemDescription :  public static HashMap<String, List>
+    itemCompleted :  public static HashMap<String, List>
+
+    start : public void
+}
+
+@enduml

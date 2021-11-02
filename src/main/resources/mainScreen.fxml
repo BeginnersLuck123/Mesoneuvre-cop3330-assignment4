@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="370.0" prefWidth="512.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignment.HelloController_List">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Here are your TO-DO lists:" />
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Button layoutX="67.0" layoutY="186.0" mnemonicParsing="false" text=" Create List" textFill="#0a0808" />
+         <Button layoutX="164.0" layoutY="185.0" mnemonicParsing="false" text="Delete List" />
+         <ListView editable="true" layoutX="150.0" prefHeight="142.0" prefWidth="173.0" />
+         <Button layoutX="344.0" layoutY="186.0" mnemonicParsing="false" text="Load List" />
+         <Button layoutX="261.0" layoutY="185.0" mnemonicParsing="false" text="Save List" />
+      </children>
+   </AnchorPane>
+</VBox>
